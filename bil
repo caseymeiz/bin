@@ -1,0 +1,13 @@
+#!/bin/bash
+# Displays a link to the info page of a package
+# The name is Brew Info Link
+
+
+padding="          "
+
+for arg; do
+	link=$(brew info $arg | grep '^http')
+	printf "%s %s %s\n" $arg "${padding:${#arg}}" $link  
+done
+
+
