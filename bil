@@ -1,7 +1,14 @@
 #!/bin/bash
 # Displays a link to the info page of a package
-# The name is Brew Info Link
-
+# The name is bil because it executes the (b)rew (i)nfo command 
+# and gives the (l)ink for that package
+#
+# Usage
+#$ bil python archey lolcat
+#  python      https://www.python.org/
+#  archey      https://obihann.github.io/archey-osx/
+#  lolcat      https://github.com/busyloop/lolcat
+#
 
 padding="          "
 
