@@ -13,7 +13,7 @@
 padding="          "
 
 for arg; do
-	link=$(brew info $arg | grep '^http')
+	link=$(brew info $arg | grep '^https\?:')
 	printf "%s %s %s\n" $arg "${padding:${#arg}}" $link  
 done
 
